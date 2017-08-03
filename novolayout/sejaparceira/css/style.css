@@ -1,0 +1,591 @@
+html,body{
+	margin: 0;
+}
+
+.background{
+	width: 100%;
+	height: 1200px;
+}
+
+.background .img{
+	background-image: url('../imgs/1.jpeg');
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+}
+.background .cover{
+	background-color: #7200b8;
+	opacity: 0.5;
+	position: absolute;
+	width: 100%;
+	height: 1200px;
+	top: 0;
+	z-index: 1;
+}
+
+.content{
+	position: absolute;
+	top: 0;
+	z-index: 2;
+	width: 100%;	
+}
+.content .body, .about, .who .we,
+.yellow-dark, .yellow-light{
+	margin: 0 auto;
+	width: 1024px;
+	color: #fff;
+	font-family: 'Asap', sans-serif;
+	margin-top: 20px;
+	
+}
+
+.content .title-one{
+	font-size: 6em;
+	text-align: center;
+	width: 100%;
+	border-bottom: 2px solid;
+	text-transform: uppercase;
+	margin-top: 160px;
+}
+.content .title-two{
+	font-family: 'Lekton', sans-serif;
+	font-size: 12em;
+	text-align: center;
+	width: 100%;
+	border-bottom: 2px solid;
+	text-transform: uppercase;
+}
+.content p{
+	font-size: 1.7em;
+	letter-spacing: 1px;
+	text-align: center;
+}
+.content .links{
+	text-align: center;
+	margin-top: 60px;
+	float: left;
+	width: 100%;
+}
+.content a{
+	color: #fff;
+	font-size: 1.2em;
+	padding: 19px 39px;
+}
+.content a:hover{
+	color: #ffff66;
+}
+.content a#saiba-mais{
+	border: 1px solid;
+	text-decoration: none;
+}
+
+.left, .right{
+	width: 50%;
+	float: left;
+}
+.right{
+	text-align: center;
+}
+
+.right .social{
+	margin: 40px 0 80px;
+}
+.social a{
+	color: #fff;
+	text-decoration: none;
+}
+.social a i{
+	font-size: 2em;
+	width: 70px;
+	height: 70px;
+	margin: 0 10px;
+	color: #fff;
+	border-radius: 50%;
+	border: 1px solid #7200b8;
+	background-color: #7200b8;
+	text-align: center;
+	line-height: 70px;
+	cursor: pointer;
+}
+.who{
+	width: 100%;
+	background-color: #ccc;
+	float: left;
+	margin-bottom: 45px;
+}
+footer{
+	height: 150px;
+	color: #fff;
+	font-family: 'Asap', sans-serif;
+	background-color: #7200b8;
+	width: 90%;
+	float: left;
+	padding: 0 5%;
+	line-height: 150px;
+	text-align: center;
+}
+footer .social {
+	padding: 0;
+	float: right;
+}
+footer .social a i{
+	color: #7200b8;
+	border: 1px solid #fff;
+	background-color: #fff;
+}
+footer span{
+	margin-right: 112px;
+	float: left;
+}
+footer img{
+	float: left;
+	margin-top: 52px;
+}
+
+@media ( min-width: 320px ) {
+	.content .body, .about, .who .we,.yellow-dark, .yellow-light{
+		margin: 0 auto;
+		width: 100%;
+		color: #fff;
+		font-family: 'Asap', sans-serif;
+		margin-top: 20px;
+		
+	}
+	.content .title-one {
+	    font-size: 3em;
+	    margin-top: 40px;
+	}
+	.content .title-two {
+	    font-family: 'Lekton', sans-serif;
+	    font-size: 3.3em;
+	}
+	.content p {
+	    font-size: 1.2em;
+	}
+	.content a {
+	    display: inline-block;
+	}
+	.content,.about,.who .we,.center{
+		width: 88%;
+		padding: 0 6%;
+	}
+	.background{
+		height: 800px;
+	}
+	.background .cover{
+		height: 800px;
+	}
+	.left, .right{
+		width: 100%;
+		float: none;
+	}
+	footer{
+		height: auto;
+		color: #fff;
+		font-family: 'Asap', sans-serif;
+		background-color: #7200b8;
+		width: 90%;
+		float: left;
+		padding: 0 5%;
+		line-height: 35px;
+		text-align: center;
+	}
+	footer span {
+	    margin-right: 0px;
+	}
+	footer img {
+	    float: none;
+	    margin: 20px auto;
+	}
+	footer .social {
+	    margin-bottom: 20px;
+	}
+	.content a {
+	    padding: 19px 12px;
+	}
+}
+
+@media ( min-width: 380px ) {
+	.content .title-two {
+	    font-size: 3.8em;
+	}
+	footer .social{
+		float: none;
+	}
+}
+
+
+@media ( min-width: 480px ) {
+	.content .title-two {
+	    font-size: 4.8em;
+	}
+	.content .title-one {
+	    font-size: 3em;
+	    margin-top: 80px;
+	}
+	footer img {
+	    display: block;
+	}
+}
+@media ( min-width: 680px ) {
+	footer .social{
+		float: none;
+	}
+	.content a {
+	    display: inline-block;
+	    padding: 19px 20px;
+	}
+	.content .title-one {
+	    font-size: 4em;
+	    margin-top: 120px;
+	}
+	.content .title-two {
+	    font-size: 6.8em;
+	}
+}
+@media ( min-width: 768px ) {
+	.content .title-two {
+	    font-size: 7.8em;
+	}
+	.content .title-one {
+	    font-size: 4em;
+	    margin-top: 130px;
+	}
+	.content a {
+	    color: #fff;
+	    font-size: 1.2em;
+	    padding: 19px 39px;
+	}
+}
+@media ( min-width: 980px ) {
+	footer{
+		height: 93px;
+		color: #fff;
+		font-family: 'Asap', sans-serif;
+		background-color: #7200b8;
+		width: 90%;
+		float: left;
+		padding: 0 5%;
+		line-height: 100px;
+		text-align: center;
+	}
+	footer .social {
+		padding: 0;
+		float: right;
+		margin-bottom: 0;
+	}
+	footer .social a i{
+		color: #7200b8;
+		border: 1px solid #fff;
+		background-color: #fff;
+	}
+	footer span{
+		margin-right: 35px;
+		float: left;
+	}
+	footer img{
+		float: left;
+		margin-top: 30px;
+	}
+}
+@media ( min-width: 1024px ) {
+	.content .title-one{
+		font-size: 6em;
+	}
+	.content .title-two{
+		font-family: 'Lekton', sans-serif;
+		font-size: 10.5em;
+	}
+	.content p{
+		font-size: 1.7em;
+		letter-spacing: 1px;
+		text-align: left;
+	}
+	.left, .right{
+		width: 50%;
+		float: left;
+	}
+	.right{
+		text-align: center;
+	}
+
+	.right .social{
+		margin: 40px 0 80px;
+	}
+	.social a{
+		color: #fff;
+		text-decoration: none;
+	}
+	.social a i{
+		font-size: 2em;
+		width: 70px;
+		height: 70px;
+		margin: 0 10px;
+		color: #fff;
+		border-radius: 50%;
+		border: 1px solid #7200b8;
+		background-color: #7200b8;
+		text-align: center;
+		line-height: 70px;
+		cursor: pointer;
+	}
+	.who{
+		width: 100%;
+		background-color: #ccc;
+		float: left;
+		margin-bottom: 45px;
+	}
+}
+@media ( min-width: 1200px ) {
+	.content .title-one{
+		font-size: 6em;
+	}
+	.content .title-two{
+		font-family: 'Lekton', sans-serif;
+		font-size: 10.8em;
+	}
+	.content p{
+		font-size: 1.7em;
+		letter-spacing: 1px;
+		text-align: center;
+	}
+	.content, .about, .who .we {
+	    width: 72%;
+	    padding: 0px 14%;
+	}
+	footer span {
+	    margin-right: 130px;
+	    float: left;
+	}
+}
+
+.who .we,
+.about{
+	color: #222;
+	font-size: 1em;
+	text-align: center;
+}
+.who .we div.counter{
+	font-size: 2em;
+	font-family: 'Lekton', sans-serif;
+	width: 70px;
+	height: 70px;
+	color: #fff;
+	border-radius: 50%;
+	border: 15px solid #7200b8;
+	background-color: #7200b8;
+	text-align: center;
+	line-height: 70px;
+	font-style: normal;
+	margin: 0 auto;
+}
+.why{
+	background-color: #fff;
+}
+.why img{
+	width: 100px;
+}
+.yellow-dark, .yellow-light{
+	color: #222;
+	font-size: 1em;
+	float: left;
+	margin: 0;
+}
+.yellow-dark{
+	text-align: center;
+	background-color: #ffcc00;
+}
+.yellow-light{
+	background-color: #ffff66;
+	text-align: left;
+}
+.center form{
+	margin: 20px 0;
+}
+input[type=text],select{
+	width: 100%;
+	background-color: transparent;
+	border: 1px solid #222;
+	color: #222;
+	padding: 2%;
+	margin-bottom: 20px;
+}
+input[type=text]{
+	width: calc(100% - 4%);
+	padding: 2%;
+}
+input[type=checkbox]{
+	float: left;
+	margin: 20px 0 20px 2px ;
+}
+label#av{
+	margin: 17px 0 40px 8px;
+	float: left;
+	width: 91%;
+}
+.enviar{
+	width: 100%;
+	border: 1px solid #7200b8;
+	background-color: #7200b8;
+	padding: 15px;
+	color: #fff;
+	font-size: 1.5em;
+}
+.enviar span{
+	font-size: 0.9em;	
+}
+
+.center span#compromisso{
+	font-size: 1em;
+	margin: 25px 0 5px;
+	float: left;
+} 
+.who .we .links{
+    margin: 55px 0 0px;
+}
+.who .we .links a#saiba-mais{
+	margin-right: 30px;
+}
+.who .we .links a{
+	border: 1px solid #7200b8;
+	text-decoration: none;
+	font-size: 1em;
+	display: inline-block;
+	padding: 15px 30px;	
+}
+.who .we{
+	margin: 20px 0;
+}
+.who .we .links a:hover{
+	background-color: #fff;
+}
+.content p#first{
+	margin-top: 130px;
+}
+.content a#teste {
+    border: 1px solid;
+    text-decoration: none;
+    color: #7200b8;
+    background-color: rgba(255,255,255,0.7);
+}
+.show-768{
+	display: none;
+}
+table{
+	width: 100%;
+}
+.content p b{
+	color: #ffcc00;
+}
+
+@media ( min-width: 768px ) {
+	.hold-item{
+		width: 100%;
+		margin: 10px 0;
+		float: left;
+	}
+	.hold-item .item{
+		display: inline-block;
+		width: calc(100% / 3 - 4%);
+		padding: 0 2%;
+		float: left;
+	}
+	.show-768{
+		display: block;
+	}
+	.hide-768{
+		display: none;
+	}
+	.background {
+	    height: 400px;
+	}
+	.background .cover {
+	    height: 400px;
+	}
+	.about{
+		margin: 20px 0;
+	}
+	.about .links{
+    	margin: 55px 0 0px;
+	}
+	.about .links a#saiba-mais{
+		margin-right: 30px;
+	}
+	.about .links a{
+		border: 1px solid #7200b8;
+		text-decoration: none;
+		font-size: 1em;
+		display: inline-block;
+		padding: 15px 30px;	
+	}
+	label#av {
+	    margin: 20px 0 40px 8px;
+	    float: left;
+	    width: 91%;
+	}
+	.content p#first {
+	    margin-top: 97px;
+	    font-size: 2em;
+	}
+}
+
+@media ( min-width: 1024px ) {
+	 .about, 
+	.who .we{
+		width: calc(60% - 6%);
+	}
+	.yellow-dark,.yellow-light{
+		width: 40%;
+		position: absolute;
+		right: 0;
+	}
+	.yellow-dark{
+		top: 0px;		
+	}
+	.yellow-light {
+	    top: 124px;
+	}
+
+	.rel{
+		position: relative;
+	}
+	.about, .who .we {
+	    width: calc(57% - 7%);
+	    padding: 0 1% 0 6%;
+	}
+	footer span {
+	    margin-right: 35px;
+	    float: none;
+	}
+	.about{
+		float: left;
+	}
+	.background {
+	    height: 600px;
+	}
+	.background .cover {
+	    height: 600px;
+	}
+		
+}
+@media ( min-width: 1200px ) {
+	.about, .who .we{
+		width: calc(57% - 15%);
+		padding: 0 1% 0 14%;	
+	}
+	.yellow-dark, .yellow-light {
+	    width: calc(40% - 11%);
+	    position: absolute;
+	    right: 0;
+	    margin-right: 10%;
+	}
+	.yellow-light {
+	    top: 143px;
+	}
+}
+@media ( min-width: 1600px ) {
+	.yellow-light {
+	    top: 124px;
+	}
+}
