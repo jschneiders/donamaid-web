@@ -10,7 +10,7 @@ html,body{
 
 .background .img,
 section .img{
-	background-image: url('../imgs/lavender-1506506_960_720.jpg');
+	background-image: url('../imgs/capa.jpeg');
 	width: 100%;
 	height: 100%;
 	background-size: cover;
@@ -268,12 +268,16 @@ section.partner h2{
 	color: #fff;
 }
 section.donie .content,
-section.partner .content{
+section.partner .content,{
 	top: 10%;
 	text-align: center;
 }
+form button{
+	text-align: center
+}
 section.donie a,
-section.partner a{
+section.partner a,
+form button{
 	font-size: 1.125rem;
 	font-weight: 600;
 	background-color: transparent;
@@ -293,7 +297,7 @@ section.partner a{
 	height: 69px;
 	line-height: 69px;
 	padding: 0 30px;
-	margin-top: 15%;
+	margin: 15% auto 0;
 	text-decoration: none;
 
 	-webkit-transition: all 200ms ease-in;
@@ -306,7 +310,8 @@ section.partner a{
     transform: scale(1); 
 }
 section.donie a:hover,
-section.partner a:hover{
+section.partner a:hover,
+form button:hover{
 	background-color: rgba(255,255,255,0.7);	
 	color: #44115f;
 
@@ -380,7 +385,138 @@ section.midia{
 	width: 100%;
 	height: auto;
 }
-.menu-scroll-fixo nav{
+
+.intro1, intro2,
+form button{
+	display: block;
+}
+form button{
+	cursor: pointer;
+}
+form input, form select{
+	width: calc((100% / 2 ) - 21px);
+	margin: 0 5px;
+	display: inline-block;
+	color: #44115f;
+	padding: 8px 0;
+	font-size: 14px;
+}
+.produto form input, .produto form select{
+	display: block;
+	border: 2px solid #44115f;
+	margin: 5px auto;
+	font-size: 16px;
+	padding: 5px;
+}
+section.produto{
+	width: 72%;
+	margin: 0 auto 93px;
+	height: 100%;
+}
+section.produto button{
+	margin: 0 auto;
+}
+section.produto form{
+	padding-bottom: 94px;
+}
+
+section.produto form div.btn_produto,
+section.produto form input.btn_produto{
+	font-size: 1.125rem;
+	font-weight: 600;
+	background-color: transparent;
+	border: 1px solid;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	display: inline-block;
+	border-radius: 100px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	min-width: 160px;
+	outline: 0;
+	min-height: 69px;
+	height: 69px;
+	line-height: 69px;
+	padding: 0 30px;
+	margin: 30px auto;
+	text-decoration: none;
+	background-color: #44115f;
+	font-family: 'Asap', sans-serif;
+	font-size: 18px;
+
+	-webkit-transition: all 200ms ease-in;
+    -ms-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    transition: all 200ms ease-in;
+}
+section.produto form input.btn_produto:hover,
+section.produto form div.btn_produto:hover{
+	background-color: rgba(255,255,255,0.7);	
+	color: #44115f;
+}
+
+.prod footer{
+	position: fixed;
+	bottom: 0;
+}
+
+.preco{
+	text-align: center;
+	font-size: 16px;
+	color: #44115f;
+	font-family: 'Asap', sans-serif;
+	margin: 45px 0 0;
+}
+.preco span#preco{
+	font-size: 22px;
+}
+.env_btn{
+	text-align: center;
+}
+.produto label,
+section.produto h4{
+	width: calc((100% / 2 ) - 21px);
+	margin: 15px auto 5px;
+	display: block;
+	font-size: 16px;
+	color: #6f6d6d;
+	font-family: 'Asap', sans-serif;
+}
+.banco .titulo{
+	font-size: 16px;
+	color: #6f6d6d;
+	font-family: 'Asap', sans-serif;
+	font-weight: bold;
+}
+.banco .conta{
+	font-size: 16px;
+	color: #6f6d6d;
+	font-family: 'Asap', sans-serif;
+}
+section.produto h4{
+	font-size: 18px;
+	margin-top: 30px;
+}
+.parceira{
+	margin: 30px 0;
+}
+section.produto p{
+	font-size: 1em;
+	margin-top: 30px;
+}
+
+section.produto input[type=radio]{
+	float: left;
+	width: 24px;
+	margin: 2px 0 5px;
+}
+
+.pagar, .horario,
+.parceira, .dados{
+	display: none;
 }
 
 /*and ( max-device-width: 380px )*/
@@ -388,7 +524,6 @@ section.midia{
 	.show-1024{
 		display: none;
 	}
-	.
 	.content p {
 	    font-size: 1.2em;
 	}
@@ -545,6 +680,11 @@ section.midia{
 		width: 350px;
 	    height: 69px;
 	    background-size: 101%;
+	}
+	.content .typed span {
+		font-family: Roboto,Helvetica,sans-serif;
+		text-align: center;
+		font-size: 0.4em;
 	}
 }
 
@@ -741,7 +881,10 @@ section.midia{
 	    margin-bottom: 6vh;
 	}
 	.content .typed span {
-	    font-size: 2.2em;
+	    font-size: 0.8em;
+	}
+	.content span.typed-cursor{
+		font-size: 1em;
 	}
 	footer {
 	    line-height: 93px;
@@ -769,27 +912,4 @@ section.midia{
 	    width: 72%;
 	    padding: 0px 14%;
 	}
-}
-
-/* ----- CURSOR TYPED.JS ---- */
-.typed-cursor{
-    opacity: 1;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
-}
-@keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-moz-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
 }

@@ -59,22 +59,26 @@
 					<div style="height: 37px; width: 100%;">
 						<img class="fade" src="imgs/logo_branco_donamaid.png" alt="Donamaid">
 					</div>
-					<!--<div id="typed-strings">
-					    <p>Seja <strong>livre</strong></p>
-					    <p>Seja <strong>leve</strong></p>
-					    <p>Seja <strong>digital</strong></p>
-					    <p>Seja <strong>donie</strong></p>
-					</div>-->
 					<div class="typed">
-						<span >Seja <strong id="typed"></strong></span>
+						<span class="intro1" >contratar e limpar</span>
+						<span class="intro2" >é só começar <3</span>
 					</div>
-					
-					<p class="fade">Nós chegamos para proporcionar uma experiência</br> inovadora para quem quer felicidade.</p>
-					<!--<div class="links">
-						<a href="/home/sejacliente">Contrate uma limpeza</a>
-						<a href="#" id="saiba-mais">saiba mais</a>
-						<a href="/home/sejaparceira">Ofereça seu serviço</a>
-					</div>-->
+					<div class="form">
+						<form method="POST" action="compra.php">
+							<input type="text" name="email" placeholder="email@email.com">
+							<select name="horas">
+								<option value="1">1h</option>
+								<option value="2">2h</option>
+								<option value="3">3h</option>
+								<option value="4">4h</option>
+								<option value="5">5h</option>
+								<option value="6">6h</option>
+								<option value="7">7h</option>
+								<option value="8">8h</option>
+							</select>
+							<button type="submit">consultar</button>
+						</form>
+					</div>
 				</div>				
 			</div>
 		</div>
@@ -133,7 +137,9 @@
 				<div class="body">
 					<h2>Oi, Donie!</h2>
 					<p>Diga Oi para a Donie, nossa assistente virtual que irá auxiliar </br>a contratar sua limpeza. Tudo pelo Messenger ;)</p>
-					<a href="https://www.messenger.com/t/donamaidbrasil/" onclick="ga('send', 'event', 'Clique no botão', 'Botão Falar com a Donie',null, '1');"> Falar com a Donie!</a>
+					<div class="env_btn">
+						<a href="https://www.messenger.com/t/donamaidbrasil/" onclick="ga('send', 'event', 'Clique no botão', 'Botão Falar com a Donie',null, '1');"> Falar com a Donie!</a>
+					</div>
 				</div>				
 			</div>			
 		</section>
@@ -156,7 +162,9 @@
 				<div class="body">
 					<h2>Seja parceira</h2>
 					<p>Ofereça seu serviço de limpeza com o Donamaid</p>
-					<a href=""> Inscreva-se como diarista!</a>
+					<div class="env_btn">
+						<a href="http://www.donamaid.com/sejaparceira"> Inscreva-se como diarista!</a>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -218,7 +226,6 @@
 		<!-- end olark code -->
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<script src="js/jquery-migrate-1.2.1.min.js"></script>
 		<script src="js/typed.js"></script>
 		<script src="js/custom.js"></script>		
 		<script type="text/javascript" src="js/slick/slick.min.js"></script>

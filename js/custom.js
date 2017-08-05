@@ -11,9 +11,9 @@ $(document).ready(function(){
 });
 
 document.addEventListener('DOMContentLoaded', function(){
-      Typed.new('#typed', {
+      /*Typed.new('#typed', {
         /*stringsElement: document.getElementById('typed-strings'),*/
-        strings: ["livre", "leve", "digital", "donie"],
+        /*strings: ["livre", "leve", "digital", "donie"],
         typeSpeed: 50,
         startDelay: 240,
         backSpeed: 30,
@@ -22,7 +22,38 @@ document.addEventListener('DOMContentLoaded', function(){
         	$('.fade,.links').delay(400).fadeIn('slow');
         	
         }
+      });*/
+
+
+      $('#horas').on('change', function(){
+        hora = this.value;
+        value = hora * 15 + 14.90;
+        $('#hora').html(hora);
+        $('#preco').html(value+'0');
       });
+
+      $('#contratar').on('click', function(){
+        $('.horario, .parceira, .dados').fadeIn('slow');
+      });
+
+      $('#pagar').on('click', function(){
+
+        dados = $('#comprar').serializeArray();
+        console.log(dados);
+
+        $.ajax({
+          url: 'emailCompra.php',
+          method: "post",
+          data: dados
+        }).done(function(data){
+          console.log('foi');
+          console.log(data);
+        });
+
+        $('.pagar').fadeIn('slow');
+      });
+
+      $('.fade,.links').delay(400).fadeIn('slow');
 
       $('.cards-grid').slick({
         autoplay: true,
